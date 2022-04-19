@@ -173,12 +173,12 @@ main {
 .staff__team__card {
 	display: flex;
 	flex-direction: column;
-	width: 200px;
+	justify-content:center;
+	width: 250px;
 	margin: 2.5rem;
 	flex-wrap: wrap;
 }
 .staff__img__container {
-	display: flex;
 	width: 250px;
 	height: 250px;
 	position: relative;
@@ -208,7 +208,7 @@ main {
 	color: #5b5b5b;
 }
 /* STAFF SECTION END HERE */
-/* STAFF SECTION START HERE*/
+/* CUSTOMER TESTIMONIAL START HERE*/
 .customer__testomonials__section {
     padding: 5.5rem 0rem;
     background-color: #f1f4f5;
@@ -222,8 +222,6 @@ main {
    background-color: #ededed;
    border-left: 10px solid #647d03;
 }
-
-
 .customer__testomonial{
     display: flex;
     color: #647d03;
@@ -238,6 +236,49 @@ main {
     color: #647d03;
     font-weight: bold;
     margin-top: 1.5rem;
+}
+/* CUSTOMER TESTIMONIAL END HERE*/
+
+/* BLOG POST START HERE*/
+.recent__post__section__title{
+    font-size:36px;
+    color: #fff
+}
+.abc{
+	height: 200px;
+	width: 100%;
+}
+.recent__posts__section{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/fondo_inicio.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center top;
+    padding-top: 35px;
+    height:700px;
+
+}
+.recent__post__section__title{
+	text-align: center;
+}
+.recent__articles__subtitle{
+	background-color: rgb(221, 221, 221);
+	text-align: center;
+	padding:1rem;
+	margin: 1rem 1.2rem;
+}
+
+.article__img img{
+	width: 100px;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+.article__card{
+	display:flex;
+	color:white;
+	gap: .8rem;
+	align-items: center;
+	justify-content: center;
+	margin: 2.5rem 1rem;
 }
 
 /* FOR DESKTOP */
@@ -289,6 +330,13 @@ main {
 	.banner > p {
 		font-size: 0.9rem;
 	}
+	.staff__team__card {
+		width: 200px;
+	}
+	.staff__img__container {
+		width: 200px;
+		height: 200px;
+	}
 
 	.card__container {
 		flex-direction: row;
@@ -299,4 +347,22 @@ main {
     .customer__testomonials__section__title{
         margin-left: 4rem;
     }
+	.recent__posts__section{
+		height:400px;
+		background-position:50% 20%;
+		background-size: 100% 90%;
+	}
+	.recent__articles{
+		display: flex;
+		flex-direction: row;
+
+		width: 80%;
+		margin:0 auto; 
+		font-size: 11px;
+	}
+	.article__img img{
+		width: 70px;
+		border-radius: 50%;
+		border: 3px solid white;
+	}
 }
