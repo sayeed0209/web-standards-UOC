@@ -125,10 +125,11 @@ main {
 	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
 		url(../images/cabecera_inicio.jpg);
 	background-size: cover;
-	background-position: 70% 80%;
+	background-position:70% 100%;
 	background-repeat: no-repeat;
 	position: relative;
-	height: 600px;
+	background-attachment: fixed;
+	height: 680px;
 	z-index: -1;
 }
 .banner__text {
@@ -244,15 +245,13 @@ main {
     font-size:36px;
     color: #fff
 }
-.abc{
-	height: 200px;
-	width: 100%;
-}
+
 .recent__posts__section{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/fondo_inicio.jpg);
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center top;
+    background-position:52% ;
+	background-attachment: fixed;
     padding-top: 35px;
     height:700px;
 
@@ -261,26 +260,73 @@ main {
 	text-align: center;
 }
 .recent__articles__subtitle{
-	background-color: rgb(221, 221, 221);
+	background-color: #fff;
 	text-align: center;
-	padding:1rem;
-	margin: 1rem 1.2rem;
+	opacity: .6;
+	padding:1rem 2.5rem;
+	width: 95%;
+	margin: 1rem auto;
 }
 
 .article__img img{
 	width: 100px;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid #Fff;
 }
 .article__card{
 	display:flex;
-	color:white;
+	color:#Fff;
 	gap: .8rem;
 	align-items: center;
 	justify-content: center;
 	margin: 2.5rem 1rem;
 }
 
+.article__content a{
+	display:inline-block;
+	padding: .5rem;
+	color:#a1c905 ;
+	text-decoration: none;
+	transition:all 0.3s ease-in-out;
+}
+.article__content a:hover{
+	color:#ffffff;
+  text-decoration:underline;
+
+}
+/* ARTICLE SECTION ENDS HERE */
+/* FOOTER START HERE*/
+footer{
+	height: 200px;
+	background-color: #5a7001;
+	padding: 2rem;
+}
+.footer__links{
+	display: flex;
+	gap: .5rem;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+.footer__links li{
+	list-style: none;
+	margin: 0.5rem 1rem;
+
+}
+.footer__links a {
+	text-decoration: none;
+	color: #000000;
+	transition:all 0.3s ease-in-out;
+}
+.footer__links a:hover{
+	text-decoration: underline;
+	color: #ffffff;
+}
+footer p{
+	text-align: center;
+	color: #Fff;
+}
 /* FOR DESKTOP */
 @media only screen and (min-width: 560px) {
 	nav {
@@ -319,12 +365,11 @@ main {
 	/* Banner */
 
 	.banner {
-		background-attachment: inherit;
 		background-position: 100% 5%;
-		height: 20.5rem;
+		height: 24.5rem;
 	}
 	.banner__text {
-		padding-top: 7rem;
+		padding-top: 10rem;
 		padding-bottom: 0.5rem;
 	}
 	.banner > p {
@@ -348,17 +393,21 @@ main {
         margin-left: 4rem;
     }
 	.recent__posts__section{
-		height:400px;
-		background-position:50% 20%;
-		background-size: 100% 90%;
+		background-position: 45% -55%;
+		height: 20.5rem;
+	}
+	.recent__articles__subtitle{
+		width: 80%;
 	}
 	.recent__articles{
 		display: flex;
 		flex-direction: row;
-
 		width: 80%;
 		margin:0 auto; 
-		font-size: 11px;
+	
+	}
+	.article__card{
+		margin: 1rem .5rem;
 	}
 	.article__img img{
 		width: 70px;
