@@ -17,17 +17,17 @@ body {
 	max-width: 1140px;
 	margin: 0 auto;
 	font-size: 18px;
-	/* background-color:aquamarine ; */
 	font-family: 'Roboto', sans-serif;
 }
 /* HEADER */
 header {
 	width: 100%;
-	background-color: rgb(250, 250, 250);
+	background-color:#fff;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 	position: fixed;
 	top: 0;
 	max-width: 1140px;
+	z-index: 1000;
 }
 nav {
 	width: 100%;
@@ -36,7 +36,7 @@ nav {
 .nav__toggle {
 	position: absolute;
 	cursor: pointer;
-	margin: 0rem 1rem;
+	margin: 1rem .5rem;
 	right: 0;
 }
 .nav__checkbox {
@@ -47,39 +47,34 @@ nav {
 }
 
 .nav__menu__right {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
-	gap: 0.5rem;
 }
 
 .nav__menu__right a {
-	background-color: #fff;
+	padding: 1rem 1rem;
+	display: block;
+	background-color: #ffffff;
 	cursor: pointer;
 	text-decoration: none;
 	color: #647e03;
 	font-weight: 900;
 	transition: all 0.3s 0s ease-in-out;
+
 }
 .nav__menu__right a:hover {
-	color: #fff;
+	color: #ffffff;
 	font-weight: 900;
 	background-color: #647e03;
-	padding: 1.5rem 11rem;
+	
 }
 .nav__menu__right a.active {
 	background-color: #647e03;
-	color: #fff;
-	padding: 1.5rem 11rem;
+	color: #ffffff;
 }
 
 .nav__menu__right li {
 	list-style: none;
 	display: none;
-	padding: 1.5rem;
-	margin: 5px;
 }
 
 /* Nav menu left */
@@ -88,6 +83,7 @@ nav {
 	align-items: center;
 }
 .nav__menu__left a {
+
 	text-decoration: none;
 	color: #647e03;
 	font-weight: bold;
@@ -125,30 +121,33 @@ main {
 	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
 		url(../images/cabecera_inicio.jpg);
 	background-size: cover;
-	background-position:70% 100%;
-	background-repeat: no-repeat;
+	background-position: 70% 100%;
 	position: relative;
 	background-attachment: fixed;
-	height: 680px;
+	height: 685px;
 	z-index: -1;
+	overflow: hidden;
+	
+
+}
+.overlay-container{
+	text-align: center;
+	position: absolute;
+	top: 30%;
 }
 .banner__text {
-	padding: 9.5rem 0.5rem 1.5rem 1.5rem;
-	line-height: 1.5;
-	font-size: 2.2rem;
-	font-weight: bold;
-	text-align: center;
+	line-height: 1.3;
+	font-size: 36px;
+	font-weight:900;
 	font-family: 'Orbitron', sans-serif;
-	color: #fff;
+	color: #ffffff;
 }
 .banner__description {
-	padding: 0rem 0.5rem;
-	text-align: center;
 	color: #85a701;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 1.5;
-	font-size: 1.2rem;
-}
+	margin-top: 1rem;
+} 
 /* BANNER END  */
 
 /* SATFF SECTION */
@@ -174,7 +173,7 @@ main {
 .staff__team__card {
 	display: flex;
 	flex-direction: column;
-	justify-content:center;
+	justify-content: center;
 	width: 250px;
 	margin: 2.5rem;
 	flex-wrap: wrap;
@@ -211,121 +210,118 @@ main {
 /* STAFF SECTION END HERE */
 /* CUSTOMER TESTIMONIAL START HERE*/
 .customer__testomonials__section {
-    padding: 5.5rem 0rem;
-    background-color: #f1f4f5;
+	padding: 5.5rem 0rem;
+	background-color: #f1f4f5;
 }
-.customer__testomonials__section__title{
-    margin-left: 1rem;
+.customer__testomonials__section__title {
+	margin-left: 1rem;
 }
-.customer__testomonials__container{
-    margin: 2rem 2.1rem;
-    padding: 1.5rem 1rem;
-   background-color: #ededed;
-   border-left: 10px solid #647d03;
+.customer__testomonials__container {
+	margin: 2rem 2.1rem;
+	padding: 1.5rem 1rem;
+	background-color: #ededed;
+	border-left: 10px solid #647d03;
 }
-.customer__testomonial{
-    display: flex;
-    color: #647d03;
+.customer__testomonial {
+	display: flex;
+	color: #647d03;
 }
-.fa-quote-left{
-    margin-right:.9rem;
-    font-style: italic;
-    font-size: 1.5rem;
+.fa-quote-left {
+	margin-right: 0.9rem;
+	font-style: italic;
+	font-size: 1.5rem;
 }
-.customer__name{
-    text-align:right;
-    color: #647d03;
-    font-weight: bold;
-    margin-top: 1.5rem;
+.customer__name {
+	text-align: right;
+	color: #647d03;
+	font-weight: bold;
+	margin-top: 1.5rem;
 }
 /* CUSTOMER TESTIMONIAL END HERE*/
 
 /* BLOG POST START HERE*/
-.recent__post__section__title{
-    font-size:36px;
-    color: #fff
+.recent__post__section__title {
+	font-size: 36px;
+	color: #ffffff;
 }
 
-.recent__posts__section{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/fondo_inicio.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:52% ;
+.recent__posts__section {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../images/fondo_inicio.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 52%;
 	background-attachment: fixed;
-    padding-top: 35px;
-    height:700px;
-
+	padding-top: 35px;
+	height: 700px;
 }
-.recent__post__section__title{
+.recent__post__section__title {
 	text-align: center;
 }
-.recent__articles__subtitle{
-	background-color: #fff;
+.recent__articles__subtitle {
+	background-color: #ffffff;
 	text-align: center;
-	opacity: .6;
-	padding:1rem 2.5rem;
+	opacity: 0.6;
+	padding: 1rem;
 	width: 95%;
 	margin: 1rem auto;
 }
 
-.article__img img{
+.article__img img {
 	width: 100px;
 	border-radius: 50%;
-	border: 3px solid #Fff;
+	border: 3px solid #ffffff;
 }
-.article__card{
-	display:flex;
-	color:#Fff;
-	gap: .8rem;
+.article__card {
+	display: flex;
+	color: #ffffff;
+	gap: 0.8rem;
 	align-items: center;
 	justify-content: center;
 	margin: 2.5rem 1rem;
 }
 
-.article__content a{
-	display:inline-block;
-	padding: .5rem;
-	color:#a1c905 ;
+.article__content a {
+	display: block;
+	color: #a1c905;
 	text-decoration: none;
-	transition:all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	font-size:21px;
 }
-.article__content a:hover{
-	color:#ffffff;
-  text-decoration:underline;
-
+.article__content a:hover {
+	color: #ffffff;
+	text-decoration: underline;
 }
 /* ARTICLE SECTION ENDS HERE */
 /* FOOTER START HERE*/
-footer{
+footer {
 	height: 200px;
 	background-color: #5a7001;
 	padding: 2rem;
 }
-.footer__links{
+.footer__links {
 	display: flex;
-	gap: .5rem;
+	gap: 0.5rem;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	
 }
-.footer__links li{
+.footer__links li {
 	list-style: none;
 	margin: 0.5rem 1rem;
-
 }
 .footer__links a {
 	text-decoration: none;
 	color: #000000;
-	transition:all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
-.footer__links a:hover{
+.footer__links a:hover {
 	text-decoration: underline;
 	color: #ffffff;
 }
-footer p{
+footer p {
 	text-align: center;
-	color: #Fff;
+	color: #ffffff;
 }
 /* FOR DESKTOP */
 @media only screen and (min-width: 560px) {
@@ -340,41 +336,37 @@ footer p{
 	.nav__menu__right {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
+		gap: .5rem;
 	}
 	.nav__menu__right a:hover {
-		color: #fff;
+		color: #ffffff;
 		font-weight: 900;
 		background-color: #647e03;
 		padding: 0.8rem 1rem;
 	}
 	.nav__menu__right a.active {
 		background-color: #647e03;
-		color: #fff;
+		color: #ffffff;
 		padding: 0.8rem 1rem;
 	}
-	.nav__menu__right li:nth-child(2) {
-		margin-right: auto;
-		padding: 10px;
-	}
+	
 	.nav__menu__right li {
 		display: block;
-		padding: 0rem;
 	}
 	/* Banner */
 
 	.banner {
-		background-position: 100% 5%;
-		height: 24.5rem;
+		height: 20.5rem;
 	}
-	.banner__text {
-		padding-top: 10rem;
-		padding-bottom: 0.5rem;
+	.overlay-container{
+		left: 3%;
 	}
-	.banner > p {
-		font-size: 0.9rem;
+	.banner__text{
+		font-size: 36px;
 	}
+	
 	.staff__team__card {
 		width: 200px;
 	}
@@ -386,32 +378,34 @@ footer p{
 	.card__container {
 		flex-direction: row;
 	}
-    .customer__testomonials__container{
-        margin:5rem  8rem;
-    }
-    .customer__testomonials__section__title{
-        margin-left: 4rem;
-    }
-	.recent__posts__section{
+	.customer__testomonials__container {
+		margin: 5rem 8rem;
+	}
+	.customer__testomonials__section__title {
+		margin-left: 4rem;
+	}
+	.recent__posts__section {
 		background-position: 45% -55%;
 		height: 20.5rem;
 	}
-	.recent__articles__subtitle{
+	.recent__articles__subtitle {
 		width: 80%;
 	}
-	.recent__articles{
+	.recent__articles {
 		display: flex;
 		flex-direction: row;
 		width: 80%;
-		margin:0 auto; 
-	
+		margin: 0 auto;
 	}
-	.article__card{
-		margin: 1rem .5rem;
+	.article__card {
+		margin: 1rem 0.5rem;
 	}
-	.article__img img{
+	.article__img img {
 		width: 70px;
 		border-radius: 50%;
-		border: 3px solid white;
+		border: 3px solid #ffffff;
+	}
+	.footer__links {
+		margin-top: 2.5rem;
 	}
 }
