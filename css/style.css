@@ -113,15 +113,15 @@ nav {
 	max-width: 40px;
 }
 
-#nav-checkbox:checked~ul.nav__menu__right li {
+#nav-checkbox:checked ~ ul.nav__menu__right li {
 	display: block;
 }
 
-#nav-checkbox:checked~label.nav__toggle .fa-times {
+#nav-checkbox:checked ~ label.nav__toggle .fa-times {
 	display: block;
 }
 
-#nav-checkbox:checked~label.nav__toggle .fa-bars {
+#nav-checkbox:checked ~ label.nav__toggle .fa-bars {
 	display: none;
 }
 
@@ -134,13 +134,14 @@ main {
 
 /* BANNER  */
 .banner {
-	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-		url(../images/cabecera_inicio.jpg);
+	background-image: url(../images/cabecera_inicio.jpg);
 	background-position: 70% 40%;
 	position: relative;
 	background-repeat: no-repeat;
 	height: 685px;
 	z-index: -1;
+	background-blend-mode: multiply;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay__container {
@@ -149,8 +150,8 @@ main {
 	top: 30%;
 }
 
-.banner__text {
-	line-height: 1.3;
+.banner__title {
+	line-height: 1.5;
 	font-size: 36px;
 	font-weight: 900;
 	font-family: 'Orbitron', sans-serif;
@@ -404,10 +405,7 @@ footer p {
 	}
 
 	.overlay__container {
-		-webkit-left: 3%;
-		-moz-left: 1%;
-		left: 3%;
-		top: 35%;
+		position: relative;
 	}
 
 	.staff__team__card {
@@ -451,7 +449,6 @@ footer p {
 
 	.post__card {
 		width: 250px;
-
 	}
 
 	.post__content a,
