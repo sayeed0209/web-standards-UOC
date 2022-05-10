@@ -18,3 +18,225 @@
 	font-family: 'Orbitron', sans-serif;
 	font-size: 2.5em;
 }
+.our__services__title {
+	font-size: 1.8em;
+	margin: 1em 0.5em;
+}
+.our__services__description {
+	margin: 1em;
+	color: #5b5b5b;
+}
+.our__catalog__title {
+	font-size: 1.5em;
+	margin: 1em 0.5em;
+	text-align: center;
+	font-style: italic;
+}
+/* TABLE STYLES START */
+.mobile__view__table {
+	border-collapse: separate;
+	text-align: center;
+	border-spacing: 0px 30px;
+	margin: 0 auto;
+	table-layout: fixed;
+	width: 100%;
+}
+.desktop__view__table {
+	display: none;
+}
+
+.design,
+.marketing {
+	background-color: #85a701;
+	padding: 0.8em;
+}
+
+.mobile__view__table tbody {
+	position: relative;
+}
+
+.mobile__view__table td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.mobile__view__table tbody tr td,
+.mobile__view__table tfoot td {
+	padding: 25px 0;
+	position: relative;
+}
+
+.product,
+.price {
+	background-color: #698303;
+	padding: 5px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.table__subheader {
+	background-color: #a1c905;
+	padding: 8px;
+	position: absolute;
+	width: 100%;
+}
+.web__design {
+	top: -6px;
+}
+.grafic__design {
+	top: 335px;
+}
+.press__marketing {
+	top: 310px;
+}
+.web__marketing {
+	top: 75px;
+}
+/* TABLE STYLES END */
+
+.recent__post__title {
+	margin: 2rem 0;
+}
+.recent__post__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #647d03;
+	padding: 1.5em;
+	gap: 20px;
+}
+.recent__post__card img {
+	width: 70px;
+}
+.recent__post__content > * {
+	margin: 5px 0;
+}
+
+.recent__post__content a {
+	display: block;
+	color: #647d03;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	font-size: 21px;
+}
+
+.recent__post__card a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+.our__social__media {
+	margin: 1em;
+}
+.social__media_title {
+	margin: 1em 0em;
+	font-size: 16px;
+}
+.social__icons_container {
+	margin: 0 1em;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	gap: 20px;
+}
+.social__icons_container li a {
+	text-decoration: none;
+}
+
+.social__icon {
+	display: inline-block;
+	padding: 1.5em;
+	border-radius: 50%;
+	color: #ffffff;
+}
+
+.fa-facebook {
+	background-color: #3b5998;
+}
+.fa-twitter {
+	background-color: #55acee;
+}
+.fa-linkedin {
+	background-color: #007bb5;
+}
+.fa-youtube {
+	background-color: #bb0000;
+}
+.fa-instagram {
+	background-color: #125688;
+}
+.fa-rss {
+	background-color: #ff6600;
+}
+.social__icon:hover {
+	text-decoration: underline;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.special__offer {
+	margin: 1em;
+	border: 2px dotted #647d03;
+	padding: 1em;
+	color: #5b5b5b;
+}
+.special__offer__tile {
+	margin: 1em 0;
+}
+@media only screen and (min-width: 390px) and (min-width: 700px) {
+	.mobile__view__table {
+		display: none;
+	}
+	.desktop__view__table {
+		display: block;
+		font-size: 15px;
+	}
+	.desktop__view__table {
+		border-collapse: collapse;
+		text-align: center;
+	}
+
+	.desktop__view__table thead th {
+		background-color: #698303;
+		padding: 0.5rem;
+	}
+
+	.desktop__view__table th,
+	.desktop__view__table td {
+		padding: 0.5rem;
+		min-width: 150px;
+	}
+	.desktop__view__table thead,
+	.desktop__view__table td {
+		border: 1px solid black;
+	}
+	.desktop__view__table tbody th {
+		background-color: #85a701;
+		border-top: 1px solid black;
+	}
+	.desktop__view__table .table-sub-title {
+		background-color: #a1c905;
+		border-left: 0;
+	}
+	.desktop__view__table tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+	.main__content {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		gap: 5px;
+	}
+	.second__section,
+	.recent__posts {
+		display: flex;
+		flex-direction: column;
+	}
+	.social__icons_container {
+		display: flex;
+		width: 100%;
+	}
+}
