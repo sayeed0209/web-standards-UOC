@@ -133,7 +133,7 @@ main {
 }
 
 /* BANNER  */
-.banner {
+.home__banner {
 	background-image: url(../images/cabecera_inicio.jpg);
 	background-position: 70% 40%;
 	position: relative;
@@ -398,7 +398,7 @@ footer p {
 
 	/* Banner */
 
-	.banner {
+	.home__banner {
 		height: 350px;
 		background-size: cover;
 		background-position: 100% 0%;
