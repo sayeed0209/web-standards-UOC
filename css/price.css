@@ -1,4 +1,4 @@
-.price__banner {
+.price__and__contact__banner {
 	background-image: url(../images/cabecera_interna.jpg);
 	background-repeat: no-repeat;
 	height: 250px;
@@ -9,7 +9,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
 	position: relative;
 }
-.banner__text__price {
+.banner__text__price__contact {
 	text-align: left;
 	position: absolute;
 	top: 30%;
@@ -17,6 +17,9 @@
 	color: #ffffff;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 2.5em;
+}
+.our__services {
+	margin: 5px;
 }
 .our__services__title {
 	font-size: 1.8em;
@@ -97,13 +100,15 @@
 	top: 75px;
 }
 /* TABLE STYLES END */
-
-.recent__post__title {
-	margin: 2rem 0;
+.recent__posts {
+	margin: 15px;
+}
+.recent__post__title,
+.special__offer__title {
+	margin: 1.5em 0;
 }
 .recent__post__card {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	border-bottom: 1px solid #647d03;
 	padding: 1.5em;
@@ -111,9 +116,6 @@
 }
 .recent__post__card img {
 	width: 70px;
-}
-.recent__post__content > * {
-	margin: 5px 0;
 }
 
 .recent__post__content a {
@@ -178,15 +180,25 @@
 }
 
 .special__offer {
-	margin: 1em;
+	margin: 1.5em;
 	border: 2px dotted #647d03;
-	padding: 1em;
+	padding: 1.5em;
 	color: #5b5b5b;
 }
-.special__offer__tile {
-	margin: 1em 0;
+.special__offer__description {
+	font-size: 15px;
 }
-@media only screen and (min-width: 390px) and (min-width: 700px) {
+
+@media only screen and (min-width: 390px) {
+	.price__and__contact__banner {
+		background-size: cover;
+	}
+	.our__services__title {
+		font-size: 2.2em;
+	}
+	.our__catalog__title {
+		font-size: 2em;
+	}
 	.mobile__view__table {
 		display: none;
 	}
@@ -224,19 +236,36 @@
 	.desktop__view__table tr:nth-child(even) {
 		background-color: #f2f2f2;
 	}
-	.main__content {
+	.desktop__view__design,
+	.desktop__view__marketing {
+		font-size: 25px;
+	}
+	.recent__post__card {
+		padding: 1em;
+	}
+	.main__content__wrapper {
 		width: 90%;
 		margin: auto;
 		display: flex;
-		gap: 5px;
+		gap: 20px;
+	}
+	.recent__post__title {
+		margin-right: 10em;
 	}
 	.second__section,
 	.recent__posts {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 	}
 	.social__icons_container {
 		display: flex;
 		width: 100%;
+	}
+}
+@media only screen and (max-width: 728px) {
+	.main__content {
+		display: flex;
+		flex-direction: column;
 	}
 }
