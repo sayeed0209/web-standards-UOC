@@ -1,10 +1,10 @@
 .price__and__contact__banner {
 	background-image: url(../images/cabecera_interna.jpg);
-	height: 250px;
+	height: 350px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: right top;
+	background-position: top right;
 	background-blend-mode: multiply;
 	background-color: rgba(0, 0, 0, 0.5);
 	position: relative;
@@ -13,7 +13,7 @@
 .banner__text__price__contact {
 	text-align: left;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 2%;
 	color: #ffffff;
 	font-family: 'Orbitron', sans-serif;
@@ -207,12 +207,13 @@
 
 @media only screen and (min-width: 490px) {
 	.price__and__contact__banner {
+		height: 250px;
 		background-size: cover;
 	}
 
 	.banner__text__price__contact {
-		left: 20%;
-		top: 35%;
+		left: 22%;
+		top: 40%;
 	}
 
 	.our__services__title {
