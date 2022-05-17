@@ -4,11 +4,12 @@
 	height: 250px;
 	background-position: center right;
 	background-attachment: fixed;
-	background-size: 2800px 700px;
+	background-size: 2800px 680px;
 	background-blend-mode: multiply;
 	background-color: rgba(0, 0, 0, 0.5);
 	position: relative;
 }
+
 .banner__text__price__contact {
 	text-align: left;
 	position: absolute;
@@ -18,23 +19,28 @@
 	font-family: 'Orbitron', sans-serif;
 	font-size: 2.5em;
 }
+
 .our__services {
 	margin: 5px;
 }
+
 .our__services__title {
 	font-size: 1.8em;
 	margin: 1em 0.5em;
 }
+
 .our__services__description {
 	margin: 1em;
 	color: #5b5b5b;
 }
+
 .our__catalog__title {
 	font-size: 1.5em;
 	margin: 1em 0.5em;
 	text-align: center;
 	font-style: italic;
 }
+
 /* TABLE STYLES START */
 .mobile__view__table {
 	border-collapse: separate;
@@ -44,6 +50,7 @@
 	table-layout: fixed;
 	width: 100%;
 }
+
 .desktop__view__table {
 	display: none;
 }
@@ -59,10 +66,10 @@
 }
 
 .mobile__view__table td {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
 }
 
 .mobile__view__table tbody tr td,
@@ -81,32 +88,28 @@
 	text-transform: uppercase;
 	font-size: 10px;
 }
+
 .table__subheader {
 	background-color: #a1c905;
-	padding: 8px;
+	padding: 5px 0px;
 	position: absolute;
 	width: 100%;
+
 }
-.web__design {
-	top: -6px;
-}
-.grafic__design {
-	top: 335px;
-}
-.press__marketing {
-	top: 310px;
-}
-.web__marketing {
-	top: 75px;
-}
+
+
 /* TABLE STYLES END */
+
 .recent__posts {
 	margin: 15px;
 }
+
 .recent__post__title,
 .special__offer__title {
 	margin: 1.5em 0;
+	font-size: 20px;
 }
+
 .recent__post__card {
 	display: flex;
 	align-items: center;
@@ -114,6 +117,7 @@
 	padding: 1.5em;
 	gap: 20px;
 }
+
 .recent__post__card img {
 	width: 70px;
 }
@@ -123,20 +127,22 @@
 	color: #647d03;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
-	font-size: 21px;
 }
 
 .recent__post__card a:hover {
 	color: #000000;
 	text-decoration: underline;
 }
+
 .our__social__media {
 	margin: 1em;
 }
+
 .social__media_title {
 	margin: 1em 0em;
 	font-size: 16px;
 }
+
 .social__icons_container {
 	margin: 0 1em;
 	display: flex;
@@ -144,68 +150,87 @@
 	list-style-type: none;
 	gap: 20px;
 }
-.social__icons_container li a {
-	text-decoration: none;
-}
 
 .social__icon {
-	display: inline-block;
-	padding: 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
+	text-align: center;
+}
+
+.social__icons_container li a {
+	text-decoration: none;
 	color: #ffffff;
 }
 
-.fa-facebook {
+.facebook {
 	background-color: #3b5998;
 }
-.fa-twitter {
+
+.twitter {
 	background-color: #55acee;
 }
-.fa-linkedin {
+
+.linkedin {
 	background-color: #007bb5;
 }
-.fa-youtube {
+
+.youtube {
 	background-color: #bb0000;
 }
-.fa-instagram {
+
+.instagram {
 	background-color: #125688;
 }
-.fa-rss {
+
+.rss {
 	background-color: #ff6600;
 }
+
 .social__icon:hover {
-	text-decoration: underline;
-	color: #000000;
 	opacity: 0.5;
 }
 
+.social__icon a:hover {
+	border-bottom: 2px solid black;
+	color: #000000;
+}
+
 .special__offer {
-	margin: 1.5em;
+	margin: 1.5em .50em;
 	border: 2px dotted #647d03;
 	padding: 1.5em;
 	color: #5b5b5b;
 }
-.special__offer__description {
-	font-size: 15px;
-}
 
-@media only screen and (min-width: 390px) {
+
+
+@media only screen and (min-width: 490px) {
 	.price__and__contact__banner {
 		background-size: cover;
+
 	}
+
 	.our__services__title {
 		font-size: 2.2em;
 	}
+
 	.our__catalog__title {
 		font-size: 2em;
 	}
+
 	.mobile__view__table {
 		display: none;
 	}
+
 	.desktop__view__table {
 		display: block;
 		font-size: 15px;
 	}
+
 	.desktop__view__table {
 		border-collapse: collapse;
 		text-align: center;
@@ -221,51 +246,60 @@
 		padding: 0.5rem;
 		min-width: 150px;
 	}
+
 	.desktop__view__table thead,
 	.desktop__view__table td {
-		border: 1px solid black;
+		border: 1px solid #000000;
 	}
+
 	.desktop__view__table tbody th {
 		background-color: #85a701;
-		border-top: 1px solid black;
+		border-top: 1px solid #000000;
 	}
+
 	.desktop__view__table .table-sub-title {
 		background-color: #a1c905;
 		border-left: 0;
 	}
+
 	.desktop__view__table tr:nth-child(even) {
 		background-color: #f2f2f2;
 	}
+
 	.desktop__view__design,
 	.desktop__view__marketing {
 		font-size: 25px;
 	}
+
 	.recent__post__card {
 		padding: 1em;
 	}
+
 	.main__content__wrapper {
-		width: 90%;
+		width: 65%;
 		margin: auto;
 		display: flex;
 		gap: 20px;
 	}
-	.recent__post__title {
-		margin-right: 10em;
-	}
-	.second__section,
-	.recent__posts {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
+
 	.social__icons_container {
-		display: flex;
 		width: 100%;
 	}
-}
-@media only screen and (max-width: 728px) {
-	.main__content {
-		display: flex;
-		flex-direction: column;
+
+	.social__icon {
+		width: 60px;
+		height: 60px;
+	}
+
+	.special__offer {
+		margin: 1em 0;
+	}
+
+	.special__offer__title {
+		margin: 1em .5em;
+	}
+
+	.special__offer__description {
+		padding: 0 .5em;
 	}
 }

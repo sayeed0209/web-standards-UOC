@@ -1,10 +1,12 @@
 .contact__us {
 	margin: 1em;
 }
+
 .contact__us__title,
 .send__message h3 {
 	margin: 1em 0;
 }
+
 .contact__us__descriptions {
 	color: #5b5b5b;
 	margin: 1em 0;
@@ -17,16 +19,23 @@
 	display: block;
 	margin: 0 auto;
 }
+
 .our__address {
 	margin: 1em;
 	border-bottom: 1px solid #647d03;
 }
+
 .our__address a {
 	text-decoration: none;
 	display: block;
 	color: #5b5b5b;
 	margin: 1em 0;
 }
+
+fieldset {
+	padding: 16px;
+}
+
 .send__message {
 	margin: 1em 0.5em;
 }
@@ -44,45 +53,39 @@
 	padding: 1em;
 	border: none;
 }
+
 .btn__send:hover {
 	background-color: #aaaaaa;
 }
+
 .input {
 	padding: 10px 0;
-	font-size: 16px;
-	border-width: 1px;
-	border-color: #647d03;
+	border: 1px solid #647d03;
 	background-color: #f1f4f5;
-	border-style: solid;
-	border-radius: 0px;
+	border-radius: 5px;
 }
+
 .input:focus {
-	outline: #698303;
+	outline: 1px solid #698303;
 }
 
 .required:after {
 	content: '*';
 	color: red;
 }
-@media only screen and (min-width: 420px) {
+
+
+@media only screen and (min-width: 490px) {
 	.main__content__wrapper {
-		width: 90%;
-		margin: auto;
-		display: flex;
-		gap: 20px;
+		width: 60%;
 	}
-	.recent__post__title {
-		margin-right: 10em;
+
+	.recent__post__content a {
+		font-size: 20px;
 	}
-	.primary__section,
-	.second__section,
-	.recent__posts {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	.social__icons_container {
-		display: flex;
-		width: 100%;
+
+	
+	.special__offer__description {
+		padding: 0 1em;
 	}
 }

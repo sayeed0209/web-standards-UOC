@@ -5,7 +5,8 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+	<title>Home</title>
+	<link rel="icon" type="image/x-icon" href="./images/favicon.png" />
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet" />
@@ -14,44 +15,47 @@
 
 <body>
 	<header>
-		<nav>
-			<input type="checkbox" id="nav-checkbox" class="nav__checkbox" />
-			<label for="nav-checkbox" class="nav__toggle">
-				<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-				<i class="fa fa-times fa-2x" aria-hidden="true"></i>
-			</label>
-			<ul class="nav__menu__left">
-				<li>
-					<a href=""><img src="./images/logo.png" alt="my-logo" /></a>
-				</li>
-				<li><a href="#" class="nav-web-design">Web Designing</a></li>
-			</ul>
-			<ul class="nav__menu__right">
-				<li>
-					<a href="index.html" class="active">Home</a>
-				</li>
-				<li>
-					<a href="#">Portfolio</a>
-				</li>
-				<li>
-					<a href="#">Blog</a>
-				</li>
-				<li>
-					<a href="price.html">Price</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="container">
+			<nav>
+				<input type="checkbox" id="nav-checkbox" class="nav__checkbox" />
+				<label for="nav-checkbox" class="nav__toggle">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					<i class="fa fa-times fa-2x" aria-hidden="true"></i>
+				</label>
+				<ul class="nav__menu__left">
+					<li>
+						<a href=""><img src="./images/logo.png" alt="my-logo" /></a>
+					</li>
+					<li><a href="#" class="nav-web-design">Web Designing</a></li>
+				</ul>
+				<ul class="nav__menu__right">
+					<li>
+						<a href="index.html" class="active">Home</a>
+					</li>
+					<li>
+						<a href="#">Portfolio</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="price.html">Price</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<!-- MAIN SECTION -->
-	<div class="container">
-		<main>
-			<!-- HOME BANNER -->
-			<section class="home__banner">
-				<div class="overlay__container">
+
+	<main>
+		<!-- HOME BANNER -->
+		<section class="home__banner">
+			<div class="overlay__container">
+				<div class="container">
 					<h1 class="banner__title">
 						Everything you need to create a professional website.
 					</h1>
@@ -60,11 +64,13 @@
 						offering you the latest market trends.
 					</p>
 				</div>
-			</section>
-			<!-- HOME BANNER END -->
-			<!-- STAFF SECTION -->
-			<section class="team__section">
-				<div class="team__heading">
+			</div>
+		</section>
+		<!-- HOME BANNER END -->
+		<!-- STAFF SECTION -->
+		<section class="team__section">
+			<div class="container">
+				<div class="team__container">
 					<h2 class="team__title">Meet our staff</h2>
 					<p class="team__description">
 						A multidisciplinary team with extensive experience in the sector.
@@ -107,10 +113,12 @@
 						</p>
 					</div>
 				</div>
-			</section>
-			<!-- STAFF SECTION END -->
-			<!-- CUSTOMER TESTOMONIALS -->
-			<section class="customer__testomonials__section">
+			</div>
+		</section>
+		<!-- STAFF SECTION END -->
+		<!-- CUSTOMER TESTOMONIALS -->
+		<section class="customer__testomonials__section">
+			<div class="container">
 				<h3 class="customer__testomonials__section__title">
 					Our customers say...
 				</h3>
@@ -128,26 +136,28 @@
 					<div class="customer__testomonial">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
 						<p>
-							A very professional treatment. Our new website meets all our
-							expectations.
+							We needed a new and modern graphic line that would revitalize
+							the image of our company and they have achieved it.
 						</p>
 					</div>
-					<p class="customer__name">Victoria Colin - Florist</p>
+					<p class="customer__name">John Mayall - Engineer</p>
 				</div>
 				<div class="customer__testomonials__container">
 					<div class="customer__testomonial">
 						<i class="fa fa-quote-left" aria-hidden="true"></i>
 						<p>
-							A very professional treatment. Our new website meets all our
-							expectations.
+							Thank you for the work you have done. Our online sales have
+							risen very significantly since we have the new website.
 						</p>
 					</div>
-					<p class="customer__name">Victoria Colin - Florist</p>
+					<p class="customer__name">Karl Cook - Shoe Store Manager</p>
 				</div>
-			</section>
-			<!-- CUSTOMER TESTOMONIALS ENDS HERE-->
-			<!-- RECENT SECTION STARTS HERE -->
-			<section class="recent__posts__section">
+			</div>
+		</section>
+		<!-- CUSTOMER TESTOMONIALS ENDS HERE-->
+		<!-- RECENT SECTION STARTS HERE -->
+		<section class="recent__posts__section">
+			<div class="container">
 				<div class="recent__posts__heading__container">
 					<h3 class="recent__post__section__title">
 						Recent Posts from our blog
@@ -187,31 +197,34 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- RECENT SECTION ENDS HERE -->
-		</main>
-	</div>
+			</div>
+		</section>
+		<!-- RECENT SECTION ENDS HERE -->
+	</main>
+
 	<!-- MAIN SECTION ENDS HERE -->
 	<!-- FOOTER STARTS HERE -->
 	<footer>
-		<ul class="footer__links">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="#">Portfolio</a>
-			</li>
-			<li>
-				<a href="#">Blog</a>
-			</li>
-			<li>
-				<a href="price.html">Price</a>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-		<p>Abu Sayeed | web design | Practice UOC 2022</p>
+		<div class="container">
+			<ul class="footer__links">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="#">Portfolio</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="price.html">Price</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<p>Abu Sayeed | web design | Practice UOC 2022</p>
+		</div>
 	</footer>
 	<!-- FOOTER ENDS HERE -->
 </body>
