@@ -126,6 +126,7 @@
 	color: #647d03;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
+	margin: 5px 0px;
 }
 
 .recent__post__card a:hover {
@@ -229,11 +230,9 @@
 	}
 
 	.desktop__view__table {
-		display: block;
+		display: inline-table;
 		font-size: 15px;
-	}
-
-	.desktop__view__table {
+		width: 100%;
 		border-collapse: collapse;
 		text-align: center;
 	}
@@ -278,7 +277,7 @@
 	}
 
 	.main__content__wrapper {
-		width: 65%;
+		width: 66%;
 		margin: auto;
 		display: flex;
 		gap: 20px;
@@ -312,3 +311,4 @@
 		flex-direction: column;
 	}
 }
+
