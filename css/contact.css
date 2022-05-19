@@ -46,10 +46,13 @@ fieldset {
 	justify-content: center;
 	margin: 1em 0;
 }
-.form__group label,.form__group__gender{
+
+.form__group label,
+.form__group__gender {
 	margin-bottom: 0.5em;
 	font-size: 16px;
 }
+
 .btn__send {
 	width: 100%;
 	background-color: #698303;
